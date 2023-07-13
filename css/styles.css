@@ -1,7 +1,139 @@
-body {
-    font-family: 'Poppins', sans-serif;
+body{
+  font-family: 'Roboto', sans-serif;
+
+  color: #FFFFFF;
+
+  background-color: #1C1B1F;
 }
 
-button {
-  font-family: inherit
+button{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 214px;
+  height: 60px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: #4F378B;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+button:hover{
+  background: #432f74;
+
+  transform: scale(1.05, 1.05);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 22px;
+}
+
+button:active{
+  background: #5f45a1;
+  transition-duration: 0.1s;
+
+  transform: scale(0.95, 0.95);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 26px;
+}
+
+#main{
+  width: 100%;
+  height: 605px;
+  flex-shrink: 0;
+  
+  max-width: 900px;
+
+  text-align: center;
+  position: relative;
+
+  border-radius: 45px;
+  border: 5px solid #000;
+  background: #35313F;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#main p{
+ transform: translateY(20px);
+}
+
+#infobutton{
+  margin-top: 10px;
+}
+#profilesbutton{
+  margin-inline: 5%;
+  margin-top: 10px;
+}
+#interestsbutton{
+  margin-top: 10px;
+}
+
+#sub{
+  width: 100%;
+  height: 434px;
+  flex-shrink: 0;
+
+  margin: auto;
+
+  text-align: center;
+
+
+  transform: translate(-0.5%, -1%);
+
+  transition-duration: 0.3s;
+
+  border-radius: 45px 45px 0px 0px;
+  border: 5px solid #000;
+  background: #25232A;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#pfp{
+  width: 187px;
+  height: 187px;
+  flex-shrink: 0;
+
+  border-radius: 93.5px;
+  border: 5px solid #FFF;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+#sub p{
+  transform: translate(0%, 15%);
+}
+
+#sub p1{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#sub p2{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*#sub:hover{
+  height: 203px;
+  transform: translate(-0.6%, -1.9%);
+} USE THIS FOR SHRINKING TOP PART*/ 
