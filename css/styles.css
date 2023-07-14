@@ -4,6 +4,10 @@ body{
   color: #FFFFFF;
 
   background-color: #1C1B1F;
+
+  user-select: none;
+
+  overflow: hidden;
 }
 
 button{
@@ -48,6 +52,216 @@ button:active{
   font-size: 26px;
 }
 
+.buttonnormal{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 214px;
+  height: 60px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: #4F378B;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttonnormal:hover{
+  background: #432f74;
+
+  transform: scale(1.05, 1.05);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 22px;
+}
+
+.buttonnormal:active{
+  background: #5f45a1;
+  transition-duration: 0.1s;
+
+  transform: scale(0.95, 0.95);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 26px;
+}
+
+.buttongray{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 214px;
+  height: 60px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: #1C1B1F;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttongray:hover{
+  background: #17161a;
+
+  transform: scale(1.05, 1.05);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 22px;
+}
+
+.buttongray:active{
+  background: #28262c;
+  transition-duration: 0.1s;
+
+  transform: scale(0.95, 0.95);
+
+  /*transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);*/
+
+  font-size: 26px;
+}
+
+.contentbutton{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 0px;
+  height: 0px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid transparent;
+  background: transparent;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0);
+}
+
+.contentbuttonopen{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 214px;
+  height: 60px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: #4F378B;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.contentbuttonopen:hover{
+  background: #432f74;
+
+  transform: scale(1.05, 1.05);
+
+  font-size: 22px;
+}
+.contentbuttonopen:active{
+  background: #5f45a1;
+  transition-duration: 0.1s;
+
+  transform: scale(0.95, 0.95);
+
+  font-size: 26px;
+}
+
+.largerbutton{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 0px;
+  height: 0px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid transparent;
+  background: transparent;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0);
+}
+
+.largerbuttonopen{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  width: 214px;
+  height: 160px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  border: 5px solid #000;
+  background: #4F378B;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mediumbox{
+  width: 278px;
+  height: 142px;
+  flex-shrink: 0;
+  border-radius: 25px;
+
+  border: 5px solid #000;
+  background: #454052;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.largerbuttonopen:hover{
+  background: #432f74;
+
+  transform: scale(1.05, 1.05);
+
+  font-size: 22px;
+}
+.largerbuttonopen:active{
+  background: #5f45a1;
+  transition-duration: 0.1s;
+
+  transform: scale(0.95, 0.95);
+
+  font-size: 26px;
+}
+
 #main{
   width: 100%;
   height: 605px;
@@ -60,7 +274,7 @@ button:active{
 
   border-radius: 45px;
   border: 5px solid #000;
-  background: #35313F;
+  background: rgba(53, 49, 63);
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -93,27 +307,63 @@ button:active{
 
   transition-duration: 0.3s;
 
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
   border-radius: 45px 45px 0px 0px;
   border: 5px solid #000;
   background: #25232A;
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#pfp{
+.pfp{
   width: 187px;
   height: 187px;
   flex-shrink: 0;
 
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
   border-radius: 93.5px;
   border: 5px solid #FFF;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.pfp:hover{
+  scale: 1.05;
+}
+
+.pfp:active{
+  scale: 0.95;
+}
+
+.pfpsmall{
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  border-radius: 93.5px;
+  border: 5px solid #FFF;
+
+  transform: translate(470%, -10%);
+}
+
+.pfpsmall:hover{
+  transform: translate(447%, -10%);
+  scale: 1.05;
+}
+
+.pfpsmall:active{
+  transform: translate(497%, -10%);
+  scale: 0.95;
 }
 
 #sub p{
   transform: translate(0%, 15%);
 }
 
-#sub p1{
+#name{
   color: #FFF;
   text-align: center;
   font-family: Roboto;
@@ -121,9 +371,13 @@ button:active{
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  transition-duration: 0.3s;
 }
 
-#sub p2{
+#description{
   color: #FFF;
   text-align: center;
   font-family: Roboto;
@@ -131,10 +385,122 @@ button:active{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  transition-duration: 0.2s;
 }
 
-.menuOpened{
-  height: 203px;
-  transform: translate(-0.6%, -1.9%);
-  background-color: red;
-} 
+#buttons{
+  transition-duration: 0.25s;
+  height: 63px;
+
+  transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+.title{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  display: inline-block;
+
+  transform: translateY(-10%);
+}
+
+.titleopen{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  transition-duration: 0.3s;
+
+  display: inline-block;
+
+  transform: translateY(-10%);
+}
+
+.content{
+  overflow: hidden;
+  color: #FFF;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 0px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+
+  display: inline-block;
+
+  transform: translateY(-10%);
+
+  transition-duration: 0.3s;
+}
+
+.contentopen{
+  overflow: hidden;
+  color: #FFF;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+
+  display: inline-block;
+
+  transform: translateY(-10%);
+
+  transition-duration: 0.3s;
+}
+
+.tab{
+  display: inline-block;
+
+  width: 100%;
+  height: 75%;
+
+  pointer-events: none;
+
+  transition-duration: 0.3s;
+
+  transform: scale(0,0)!important;
+
+  z-index: -1;
+}
+
+.tabopen{
+  display: inline-block;
+
+  width: 100%;
+  height: 75%;
+
+  pointer-events: none;
+
+  transition-duration: 0.3s;
+
+  transform: scale(1,1);
+
+}
+
+#infotab{
+  transform: translateY(-30%);
+}
+
+#profiletab{
+  transform: translateY(-130%);
+}
+
+#intereststab{
+  transform: translateY(-230%);
+}
