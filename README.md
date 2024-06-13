@@ -1,2 +1,3 @@
 # justsymple.github.io
-my website
+
+please ignore my terrible coding 😭 i have no idea what im doing i hate making websites
