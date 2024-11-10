@@ -1,0 +1,147 @@
+<html lang="en">
+
+    <!--
+    hii!! symple was here
+    ignore my terrible code :sob:
+    last update: INSERT DATE
+    -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="(almost) everything about symple!">
+        <link rel="icon" type="image/x-icon" href="/res/websitestuff/icon.png">
+        
+        <title>about symple!</title>
+
+        <!--script type="text/javascript" src="/js/cursortrail.js"></script-->
+        <link rel="stylesheet" href="/css/aero.css">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+
+    </head>
+    <body>
+        <div class="taskbar">
+            <div class="taskbarreflections"></div>
+            <button class="startorb" onclick="showHideStartMenu()">
+                <img class="startorbpic" src="/res/websitestuff/icon.png">
+            </button>
+            <div class="taskbarcurrentwindows">
+                <button class="openedwindowbutton">
+                    <img class="openedwindowicon" src="/res/home/intropic.jpeg">
+                </button>
+            </div>
+            <div class="taskbarextraicons"></div>
+            <div class="taskbardatetime"> 12:30 PM <br> 11/10/2024 </div>
+            <div class="taskbarpeek"></div>
+        </div>
+
+        <div class="startmenu" id="startmenu">
+            <div class="windowreflections"></div>
+            <div class="startmenulist">
+                <a class="listbutton">
+                    <img class="listicon" src="/res/websitestuff/icon.png">
+                    hiiii
+                </a>
+            </div>
+            <div class="startmenufavs">
+                <a class="favsbutton">Symple</a>
+                <a class="favsbutton" href="https://bsky.app/profile/justsymple.bsky.social">Bluesky</a>
+                <a class="favsbutton" href="https://www.instagram.com/just_symple1">Instagram</a>
+                <a class="favsbutton" href="https://pronouns.page/@symple">Pronouns</a>
+                <a class="favsbutton" href="https://www.roblox.com/users/189545034/profile">Roblox</a>
+                <a class="favsbutton" href="https://www.youtube.com/c/symple1">YouTube</a>
+            </div>
+            <div class="startmenupfp">
+                <img src="/res/websitestuff/icon.png">
+            </div>
+        </div>
+
+        <div class="windowscontainer">
+            <div class="window" id="intro"> 
+                <div class="windowreflections"></div>
+                <div class="titlebar">
+                    <img class="windowicon" src="/res/home/intropic.jpeg">
+                    <div class="windowtitle">Introduction</div>
+                </div>
+                <div class="windowcontent">
+                    hello! i'm symple and, well, this is my website!
+                    <br><br>
+                    here you can find out many things about me and my interests.
+                </div>
+            </div>
+
+            <div class="window" id="basicinfo"> 
+                <div class="windowreflections"></div>
+                <div class="titlebar">
+                    <img class="windowicon" src="/res/home/intropic.jpeg">
+                    <div class="windowtitle">Basic Info</div>
+                </div>
+                <div class="windowcontent">
+                    <b>names</b> <br>
+                    symple, ramona, mona
+                    <br> <br>
+                    <b>pronouns</b> <br>
+                    she/they
+                    <br> <br>
+                    <b>gender</b> <br>
+                    female
+                    <br> <br>
+                    <b>sexuality</b> <br>
+                    pansexual
+                    <br> <br>
+                    <b>ethnicity</b> <br>
+                    colombian and puerto rican (i dont know much spanish unfortunately)
+                    <br> <br>
+                    <b>hobbies</b> <br>
+                    gaming, drawing, coding, 3d modeling, occasionally animating
+                </div>
+            </div>
+
+            <div class="window" id="interests"> 
+                <div class="windowreflections"></div>
+                <div class="titlebar">
+                    <img class="windowicon" src="/res/home/intropic.jpeg">
+                    <div class="windowtitle">Interests</div>
+                </div>
+                <div class="windowcontent">
+                    <b>current hyperfixations</b> <br>
+                    dandys world, brawl stars, cookie run, twrp
+                    <br><br>
+                    more extensive list coming eventually...
+                </div>
+            </div>
+
+            <div class="window" id="favsong"> 
+                <div class="windowreflections"></div>
+                <div class="titlebar">
+                    <img class="windowicon" src="/res/home/intropic.jpeg">
+                    <div class="windowtitle">Favorite Music</div>
+                </div>
+                <div class="windowcontent">
+                    remember to put favorite albums, songs, and artists here
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showHideStartMenu() {
+                var x = document.getElementById("startmenu");
+                if (x.classList.contains("show")) {
+                    x.classList.remove("show");
+                    setTimeout(function() {
+                        x.style.display = 'none';
+                    }, 100);
+                } else {
+                    x.style.display = 'block';
+                    x.classList.add("show");
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            $( ".window" ).draggable({ handle: ".titlebar", stack: ".window", scroll: false });
+        </script>
+    </body>
+</html>
