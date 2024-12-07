@@ -1,2 +1,2 @@
 # justsymple.github.io
- this is my website! ignore my terrible html and css 😭
+ this is my website! ignore my terrible css 😭
