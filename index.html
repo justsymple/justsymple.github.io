@@ -1,7 +1,203 @@
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="(Almost) everything about Symple!">
+        <link rel="icon" type="image/x-icon" href="/res/websitestuff/pfp.jpg">
+        
+        <title>About Symple!</title>
+
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+    </head>
     <body>
-        <h1>WIP!!</h1>
-        come back later smh <br>
-        it'll be ready eventually
+        <h3 class="warning"> THIS WEBSITE IS STILL A WIP!!!!</h3>
+        <div class="desktopIconContainer">
+            <button class="desktopIcon" onclick="toggleElement('welcomeWindow', 'block', 250)">
+                <img class="desktopIconImage" src="/assets/pfp.jpg" draggable="false">
+                Welcome!
+            </button>
+            <button class="desktopIcon" onclick="toggleElement('basicInfoWindow', 'block', 250)">
+                <img class="desktopIconImage" src="/assets/pfp.jpg" draggable="false">
+                Basic Info
+            </button>
+            <button class="desktopIcon" onclick="toggleElement('interestsWindow', 'block', 250)">
+                <img class="desktopIconImage" src="/assets/pfp.jpg" draggable="false">
+                Interests
+            </button>
+            
+        </div>
+        <div class="taskbar">
+            <button class="startButton" onclick="toggleElement('startMenu', 'block', 250)"> 
+                <img class="startButtonPic" src="/assets/pfp.jpg" draggable="false"> 
+            </button>
+            <div class="taskbarTime" id="time"> 
+                11:21 AM
+            </div>
+        </div>
+
+        <div class="startMenu" id="startMenu">
+            <div class="startMenuLeft">
+                <button class="startMenuLeftItem" onclick="toggleElement('nerdyWindow', 'block', 250); toggleElement('startMenu', 'block', 250)">
+                    <img class="startMenuLeftItemImage" src="/assets/pfp.jpg" draggable="false">
+                    Nerdy Stuff
+                </button>
+                <button class="startMenuLeftItem" onclick="toggleElement('changelogWindow', 'block', 250); toggleElement('startMenu', 'block', 250)">
+                    <img class="startMenuLeftItemImage" src="/assets/pfp.jpg" draggable="false">
+                    Changelog
+                </button>
+                <button class="startMenuLeftItem" onclick="toggleElement('aboutWindow', 'block', 250); toggleElement('startMenu', 'block', 250)">
+                    <img class="startMenuLeftItemImage" src="/assets/pfp.jpg" draggable="false">
+                    About Website
+                </button>
+                <button class="startMenuLeftItem" onclick="toggleElement('nothingyet', 'block', 250); toggleElement('startMenu', 'block', 250)">
+                    <img class="startMenuLeftItemImage" src="/assets/pfp.jpg" draggable="false">
+                    Coming Soon...
+                </button>
+            </div>
+            <div class="startMenuRight">
+                <button class="startMenuRightItem" onclick="window.open('https://bsky.app/profile/justsymple.bsky.social', '_blank').focus();">Bluesky</button>
+                <button class="startMenuRightItem" onclick="window.open('https://www.instagram.com/just_symple1/', '_blank').focus();">Instagram</button>
+                <button class="startMenuRightItem" onclick="window.open('https://pronouns.page/@symple', '_blank').focus();">Pronouns</button>
+                <button class="startMenuRightItem" onclick="window.open('https://www.roblox.com/users/189545034/profile', '_blank').focus();">Roblox</button>
+                <button class="startMenuRightItem" onclick="window.open('https://www.youtube.com/c/symple1', '_blank').focus();">YouTube</button>
+
+            </div>
+            <div class="startMenuUsername">
+                Symple
+            </div>
+            <div class="startMenuPfp">
+                <img class="startMenuPfpImage" src="/assets/pfp.jpg" draggable="false">
+            </div>
+        </div>
+
+        <div class="windowContainer">
+            <div class="windowHolder show" id="welcomeWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> Welcome! </div>
+                        <button class="windowCloseButton" onclick="toggleElement('welcomeWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>Welcome!</h3>
+                        This is my website where you can learn (a few) things about me! <br>
+                        Click the links on the desktop or open the menu in the bottom left to open more windows!
+                        <br><br>
+                        <small>If you experience any issues, try refreshing.</small>
+                        <br>
+                        <small>This website is best when viewed on desktop, but it does work on mobile.</small>
+                        <img src="/assets/pfp.jpg" class="welcomeImage" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="windowHolder show" id="basicInfoWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> Basic Info </div>
+                        <button class="windowCloseButton" onclick="toggleElement('basicInfoWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>About me!</h3>
+                        Hello, I'm Symple, otherwise known as Ramona!
+                        <br><br>
+                        <br>
+                        <b>Pronouns</b>
+                        <br>
+                        She/They
+                        <br><br>
+                        <b>Gender</b>
+                        <br>
+                        Idk gender is confusing
+                        <br><br>
+                        <b>Sexuality</b>
+                        <br>
+                        Pansexual
+                        <br><br>
+                        <b>Ethnicity</b>
+                        <br>
+                        Hispanic (Colombian and Puerto Rican, I don't know much Spanish sadly.)
+                        <br><br>
+                        <b>Hobbies</b>
+                        <br>
+                        Gaming, drawing, coding, occasionally animating or making music
+                    </div>
+                </div>
+            </div>
+
+            <div class="windowContainer">
+                <div class="windowHolder show" id="interestsWindow">
+                    <div class="window">
+                        <div class="titlebar">
+                            <div class="titlebarTitle"> Interests </div>
+                            <button class="windowCloseButton" onclick="toggleElement('interestsWindow', 'block', 250)">X</button>
+                        </div>
+                        <div class="windowContent">
+                            <h3>Current Interests!</h3>
+                            <br>
+                            <b>Current Hyperfixations</b>
+                            <br>
+                            Dandy's World, Cookie Run, Squid Game
+                            <br><br>
+                            <b>Favorite Song</b>
+                            <br>
+                            OVERTiME by atsuover
+                            <br><br>
+                            <small>More extensive list might come soon...</small>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </body>
+
+    <!--Window Dragging-->
+    <script type="text/javascript">
+        $( ".window" ).draggable({ handle: ".titlebar", stack: ".window", scroll: false });
+    </script>
+
+    <!--Keep Window Size-->
+    <script>
+        function fixWindowSize() {
+            $(".window").css("width", "100%");
+            $(".window").css("height", "100%");
+        }
+        fixWindowSize()
+        setInterval(fixWindowSize, 1);
+    </script>
+
+    <!--Time Stuff-->
+    <script type="text/javascript">
+        function dateAndTime() {
+            var date = new Date();
+            var time = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+
+            document.getElementById("time").innerHTML = time;
+        }
+        dateAndTime()
+        setInterval(dateAndTime, 500);
+    </script>
+
+    <!--Show Hide-->
+    <script>
+        function toggleElement(elementId, displayType, timeOut) {
+            var x = document.getElementById(elementId);
+            if (x.classList.contains("show")) {
+                x.classList.remove("show");
+                x.classList.add("windowCloseAnimation");
+                setTimeout(function() {
+                    x.style.display = 'none';
+                    x.classList.remove("windowCloseAnimation");
+                }, timeOut);
+            } else {
+                x.classList.add("windowOpenAnimation");
+                x.classList.add("show");
+                x.style.display = displayType;
+                setTimeout(function() {
+                    x.classList.remove("windowOpenAnimation");
+                }, timeOut);
+            }
+        }
+    </script>
 </html>
