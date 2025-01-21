@@ -13,7 +13,6 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
     </head>
     <body>
-        <h3 class="warning"> THIS WEBSITE IS STILL A WIP!!!!</h3>
         <div class="desktopIconContainer">
             <button class="desktopIcon" onclick="toggleElement('welcomeWindow', 'block', 250)">
                 <img class="desktopIconImage" src="/assets/pfp.jpg" draggable="false">
@@ -101,7 +100,7 @@
                     </div>
                     <div class="windowContent">
                         <h3>About me!</h3>
-                        Hello, I'm Symple, otherwise known as Ramona!
+                        Hello, I'm Ramona, otherwise known as Symple!
                         <br><br>
                         <br>
                         <b>Pronouns</b>
@@ -127,28 +126,87 @@
                 </div>
             </div>
 
-            <div class="windowContainer">
-                <div class="windowHolder show" id="interestsWindow">
-                    <div class="window">
-                        <div class="titlebar">
-                            <div class="titlebarTitle"> Interests </div>
-                            <button class="windowCloseButton" onclick="toggleElement('interestsWindow', 'block', 250)">X</button>
-                        </div>
-                        <div class="windowContent">
-                            <h3>Current Interests!</h3>
-                            <br>
-                            <b>Current Hyperfixations</b>
-                            <br>
-                            Dandy's World, Cookie Run, Squid Game
-                            <br><br>
-                            <b>Favorite Song</b>
-                            <br>
-                            OVERTiME by atsuover
-                            <br><br>
-                            <small>More extensive list might come soon...</small>
-                        </div>
+            <div class="windowHolder show" id="interestsWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> Interests </div>
+                        <button class="windowCloseButton" onclick="toggleElement('interestsWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>Current Interests!</h3>
+                        <br>
+                        <b>Current Hyperfixations</b>
+                        <br>
+                        Dandy's World, Cookie Run, Squid Game
+                        <br><br>
+                        <b>Favorite Song</b>
+                        <br>
+                        OVERTiME by atsuover
+                        <br><br>
+                        <small>More extensive list might come soon...</small>
                     </div>
                 </div>
+            </div>
+
+            <div class="windowHolder" id="nerdyWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> Nerdy Stuff </div>
+                        <button class="windowCloseButton" onclick="toggleElement('nerdyWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>Nerdy Stuff</h3>
+                        <br>
+                        <b>Programming Languages</b>
+                        <br>
+                        C#, GDScript, Lua, Python
+                        <br><br>
+                        <b>Game Engine</b>
+                        <br>
+                        Godot, Love2D
+                        <br><br>
+                        <b>3D Stuff</b>
+                        <br>
+                        Blender
+                        <br><br>
+                        <b>2D Stuff</b>
+                        <br>
+                        Procreate and Aseprite
+                    </div>
+                </div>
+            </div>
+
+            <div class="windowHolder" id="changelogWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> Changelog </div>
+                        <button class="windowCloseButton" onclick="toggleElement('changelogWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>Changelog</h3>
+                        <br>
+                        <b>Version 1.0 (2025.1.21)</b>
+                        <br>
+                        - Website is now up!
+                    </div>
+                </div>
+            </div>
+
+            <div class="windowHolder" id="aboutWindow">
+                <div class="window">
+                    <div class="titlebar">
+                        <div class="titlebarTitle"> About this Website </div>
+                        <button class="windowCloseButton" onclick="toggleElement('aboutWindow', 'block', 250)">X</button>
+                    </div>
+                    <div class="windowContent">
+                        <h3>About "About Symple"</h3>
+                        <br>
+                        Version 1.0 (2025.1.21)
+                        <br>
+                        Created by Symple
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
