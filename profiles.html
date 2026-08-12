@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Symple's profiles">
+        <link rel="icon" type="image/x-icon" href="/assets/pfp.jpg">
+        <title>Symple's Profiles</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/profiles.css">
+    </head>
+    <body class="fadeInTransition">
+        <div class="container">
+            <div class="content">
+                <div class="titlebox">
+                    <div class="loading"></div>
+                    <div>
+                        Profiles
+                        <br>
+                        <small>These are most of my profiles. Click the [GO!] button to visit the profile!</small>
+                        <br>
+                        <button class="button" id="exitbutton" onclick="exitTransition()">Exit</button>
+                    </div>
+                    <div class="loading"></div>
+                </div>
+                <div class="profilebox">
+                    <div class="profilelogo" id="bluesky"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">Bluesky</div>
+                        <div class="profilesubinfo">
+                            <div class="username">justsymple.bsky.social</div>
+                            <div class="usercount">Inactive</div>
+                            <button class="button userbutton" onclick="location.href='https://bsky.app/profile/justsymple.bsky.social'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profilebox">
+                    <div class="profilelogo" id="github"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">GitHub</div>
+                        <div class="profilesubinfo">
+                            <div class="username">justsymple</div>
+                            <div class="usercount">Inactive</div>
+                            <button class="button userbutton" onclick="location.href='https://github.com/justsymple'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profilebox">
+                    <div class="profilelogo" id="instagram"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">Instagram</div>
+                        <div class="profilesubinfo">
+                            <div class="username">@just_symple1</div>
+                            <div class="usercount">Active</div>
+                            <button class="button userbutton" onclick="location.href='https://www.instagram.com/just_symple1/'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profilebox">
+                    <div class="profilelogo" id="pronouns"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">Pronouns</div>
+                        <div class="profilesubinfo">
+                            <div class="username">@symple</div>
+                            <div class="usercount">N/A</div>
+                            <button class="button userbutton" onclick="location.href='https://pronouns.page/@symple'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profilebox">
+                    <div class="profilelogo" id="tiktok"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">TikTok</div>
+                        <div class="profilesubinfo">
+                            <div class="username">@just_symple</div>
+                            <div class="usercount">Active</div>
+                            <button class="button userbutton" onclick="location.href='https://www.tiktok.com/@just_symple'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profilebox">
+                    <div class="profilelogo" id="twitter"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">Twitter/X</div>
+                        <div class="profilesubinfo">
+                            <div class="username">@just_symple</div>
+                            <div class="usercount">Inactive</div>
+                            <button class="button userbutton" onclick="location.href='https://x.com/just_symple'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profilebox">
+                    <div class="profilelogo" id="youtube"></div>
+                    <div class="profileinfo">
+                        <div class="profilewebsite">YouTube</div>
+                        <div class="profilesubinfo">
+                            <div class="username">@just_symple</div>
+                            <div class="usercount">Inactive</div>
+                            <button class="button userbutton" onclick="location.href='https://www.youtube.com/c/symple1'">GO!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function exitTransition() {
+            document.body.classList.add("fadeOutTransition");
+
+            setTimeout(() => {
+                window.location.href = "/index.html";
+            }, 700)
+        }
+    </script>
+</html>

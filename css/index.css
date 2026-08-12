@@ -1,0 +1,230 @@
+body {
+    background-image: url("/assets/BGSquareBig2x.png");
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.mainmenubutton{
+    scale: 100%;
+    width: 95px;
+    height: 43px;
+    background-image: url("/assets/MainMenuButtonGradient.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    image-rendering: pixelated;
+    font-family: "PSquare";
+    font-size: 12px;
+    border: solid;
+    border-color: #FBFBFB;
+    border-width: 1;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px #FBFBFB;
+    color: #000;
+}
+.mainmenubutton:hover{
+    background-image: url("/assets/MainMenuButtonGradientHover.png");
+    border-color: #F3DBFB;
+    box-shadow: 0px 0px 0px 1px #8A00D3;
+    text-shadow: 1px 1px 0px #F3DBFB;
+}
+.mainmenubutton:active{
+    background-image: url("/assets/MainMenuButtonGradientPressed.png");
+    border-color: #A2A2A2;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px #A2A2A2;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.mainmenu{
+    position: relative;
+    display: grid;
+    width: 196px;
+
+    scale: clamp(1, 80vmin / 196px, 3);
+    transform-origin: center;
+
+    row-gap: 4px;
+    column-gap: 34px;
+
+    grid-template-areas:
+        "banner banner"
+        "info profiles"
+        "song song";
+
+    grid-template-columns: 33% 33%;
+}
+
+#info{
+    grid-area: info;
+}
+#profiles{
+    grid-area: profiles;
+}
+
+#banner{
+    grid-area: banner;
+    width: 194px;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+}
+
+#song{
+    grid-area: song;
+    width: 194px;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+}
+#song:hover{
+    background-image: url("/assets/MainMenuButtonGradient.png");
+    border-color: #FBFBFB;
+    box-shadow: 0px 0px 0px 1px #000000;
+    text-shadow: 1px 1px 0px #FBFBFB;
+}
+#song:active{
+    background-image: url("/assets/MainMenuButtonGradient.png");
+    border-color: #FBFBFB;
+    box-shadow: 0px 0px 0px 1px #000000;
+    text-shadow: 1px 1px 0px #FBFBFB;
+}
+
+.mainmenuicon{
+    width: 32px;
+    height: 32px;
+    background-image: url("/assets/pfp.jpg");
+    background-size: cover;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    margin-top: 3px;
+}
+.mainmenulabel{
+    display: flex;
+    height: 32px;
+    width: 142px;
+    margin-top: 4px;
+    margin-left: 7px;
+    background-image: url("/assets/ButtonLabelBG.png");
+    box-shadow: 0px 0px 0px 1px #A0A0A0;
+    align-items: center;
+    justify-content: center;
+    line-height: 32px;
+    font-size: 14px;
+    text-shadow: none;
+}
+#songicon{
+    background-image: url("/assets/favalbumart.png");
+}
+#songlabel{
+    align-items: stretch;
+    line-height: 0;
+    flex-direction: column;
+    text-align: left;
+}
+#songtitle{
+    margin-top: -4px;
+    margin-left: 3px;
+}
+#songartist{
+    color:#787878;
+    margin-top: -1px;
+    margin-left: 3px;
+    font-size: 8px;
+}
+#songstart{
+    font-size: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 50;
+}
+#songend{
+    font-size: 8px;
+    position: absolute;
+    bottom: 10px;
+    right: 10;
+}
+#songprogress{
+    position: absolute;
+    bottom: 9px;
+    right: 27px;
+    width: 99px;
+    height: 1px;
+    background-color: #787878;
+}
+#songfill{
+    background-color: #242424;
+    height: 1px;
+    width: 0%;
+}
+#songplaypause{
+    pointer-events: all;
+    border: none;
+    width: 6px;
+    height: 9px;
+    background-image: url("/assets/playbutton.png");
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+#songplaypause:hover{
+    cursor: pointer;
+}
+#profileslabel{
+    background-color: #FBFBFB;
+    border-width: 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-color: #E3E3E3;
+    border-style: solid;
+    box-shadow: 0px 0px 0px 1px #797979;
+    width: 91px;
+    height: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    text-shadow: none;
+}
+#profiles:hover > #profileslabel {
+    border-color: #EBBAFB;
+    background-color: #F3DBFB;
+    box-shadow: 0px 0px 0px 1px #C341FB;
+}
+#profiles:active > #profileslabel {
+    border-color: #C3C3C3;
+    background-color: #A2A2A2;
+    box-shadow: 0px 0px 0px 1px #797979;
+}
+#profiles:hover > #profilesicon {
+    background-image: url("/assets/ProfilesIconHover.png");
+    filter: drop-shadow(1px 1px 0px #F3DBFB);
+}
+#profiles:active > #profilesicon {
+    background-image: url("/assets/ProfilesIcon.png");
+    filter: drop-shadow(1px 1px 0px #6e6e6e);
+}
+#profilesicon{
+    position: absolute;
+    background-image: url("/assets/ProfilesIcon.png");
+    height: 20px;
+    width: 30px;
+    left: 30px;
+    top: 17px;
+    filter: drop-shadow(1px 1px 0px #fbfbfb);
+}
+
+@media (min-width: 800px) {
+    
+}

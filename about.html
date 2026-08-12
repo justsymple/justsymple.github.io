@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="About Symple">
+        <link rel="icon" type="image/x-icon" href="/assets/pfp.jpg">
+        <title>About Symple</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/about.css">
+    </head>
+    <body class="aboutInAnimation">
+        <div class="container">
+            <div class="content">
+                <div class="titlebox">ABOUT ME <button class="button" id="exitbutton" onclick="exitTransition()">Exit</button></div>
+                <div class="descbox">Now entering [A]: <p style="color: #FBFBFB;">Symple</p></div>
+                <div class="aboutbox">
+                    <div class="sectionlabel">Basic Info</div>
+                    <br>
+                    <b>Name</b>
+                    <br>
+                    You can call me Symple!
+                    <br><br>
+                    <b>Pronouns</b>
+                    <br>
+                    She/He
+                    <br><br>
+                    <b>Gender</b>
+                    <br>
+                    Bigender
+                    <br><br>
+                    <b>Sexuality</b>
+                    <br>
+                    Pansexual
+                    <br><br>
+                    <b>Ethnicity</b>
+                    <br>
+                    Colombian and Puerto Rican (I don't know much Spanish sadly)
+                    <br><br>
+                    <b>Hobbies</b>
+                    <br>
+                    Gaming, drawing, coding, occasionally animating
+                </div>
+                <div class="aboutbox">
+                    <div class="sectionlabel">Main Interests</div>
+                    <br>
+                    <b>Games</b>
+                    <br>
+                    Limbus Company, The Binding of Isaac
+                    <br><br>
+                    <b>Music</b>
+                    <br>
+                    Enjambre
+                </div>
+                <div class="aboutbox">
+                    <div class="sectionlabel">All Interests</div>
+                    <br>
+                    WIP - Might finish eventually or not idk
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function exitTransition() {
+            document.body.classList.add("aboutOutAnimation");
+
+            setTimeout(() => {
+                window.location.href = "/index.html";
+            }, 700)
+        }
+    </script>
+</html>

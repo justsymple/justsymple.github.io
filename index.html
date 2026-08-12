@@ -1,129 +1,91 @@
 <html lang="en">
+    <!-- hey, it's symple! excuse my messy html and css, i barely know what i'm doing :sob:
+        the page transitions unfortunately don't work that well in firefox but i'll fix it eventually
+    -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="(Almost) everything about Symple!">
+        <meta name="description" content="Symple's profiles and interests, all in one page!">
         <link rel="icon" type="image/x-icon" href="/assets/pfp.jpg">
         
-        <title>About Symple!</title>
+        <title>Symple's Website</title>
 
         <link rel="stylesheet" href="/css/style.css">
-
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+        <link rel="stylesheet" href="/css/index.css">
     </head>
-    <body>
-       <div class="window" id="banner">
-            <div class="titlebar">
-                <img class="titlebaricon" src="/assets/icons/banner.png">
-                <div class="titlebartitle">Banner</div>
-            </div>
-            <img class="windowcontent" id="bannercontent"src="/assets/sympletitle.png"></img>
-       </div>
-
-       <div class="windowcontainer">
-            <div class="window" id="navigation">
-                    <div class="titlebar">
-                        <img class="titlebaricon" src="/assets/icons/navigation.png">
-                        <div class="titlebartitle">Navigation</div>
+    <body class="fadeInTransition">
+        <div class="container">
+            <div class="mainmenu">
+                <button class="mainmenubutton" id="banner">
+                    <div class="mainmenuicon" id="bannericon"></div>
+                    <div class="mainmenulabel">Symple</div>
+                </button>
+                <button class="mainmenubutton" id="info" onclick="aboutTransition()">ABOUT ME</button>
+                <button class="mainmenubutton" id="profiles" onclick="profileTransition()">
+                    <div id="profileslabel">Profiles and More</div>
+                    <div id="profilesicon" src="/assets/ProfilesIcon.png">
+                </button>
+                <button class="mainmenubutton" id="song">
+                    <div class="mainmenuicon" id="songicon"></div>
+                    <div class="mainmenulabel" id="songlabel">
+                        <p id="songtitle">Favorite Song</p>
+                        <p id="songartist">Song Artist</p>
+                        <div id="songstart">0:00</div>
+                        <div id="songprogress"><div id="songfill"></div></div>
+                        <div id="songend">0:00</div>
+                        <div id="songplaypause" onclick="toggleMusic()"></div>
                     </div>
-                    <div class="windowcontent">
-                        Additional Pages
-                        <br><br>
-                        <button onclick="location.href='wip.html'" type="button">Art (WIP)</button>
-                        <button onclick="location.href='wip.html'" type="button">Nerdy Stuff (WIP)</button> 
-                        <button onclick="location.href='wip.html'" type="button">Projects (WIP)</button> 
-                        <br><br>
-                        Profiles
-                        <br><br>
-                        <button onclick="location.href='https://bsky.app/profile/justsymple.bsky.social'" type="button">Bluesky</button>
-                        <button onclick="location.href='https://github.com/justsymple'" type="button">GitHub</button>
-                        <button onclick="location.href='https://www.instagram.com/just_symple1/'" type="button">Instagram</button>
-                        <button onclick="location.href='https://pronouns.page/@symple'" type="button">Pronouns</button>
-                        <button onclick="location.href='https://www.roblox.com/users/189545034/profile'" type="button">Roblox</button>
-                        <button onclick="location.href='https://www.youtube.com/c/symple1'" type="button">YouTube</button>
-                        <br><br><br>
-                        <small id="lastupdated">Last updated: 10/22/2025</small>
-                    </div>
+                </button>
             </div>
-
-            <div class="window" id="welcome">
-                <div class="titlebar">
-                    <img class="titlebaricon" src="/assets/icons/welcome.png">
-                    <div class="titlebartitle">Welcome!</div>
-                </div>
-                <div class="windowcontent">
-                    Hello! I'm Symple and this is my website!
-                    <br> Here you can find out tons of information about me and my interests. You can also find my profiles and projects in the navigation section.
-                    <br> This is still heavily a WIP but it's functional enough for now.
-                    <br> <img src="/assets/pfp.jpg" class="welcomeimg"> 
-                    <br> <small>(me! drawn by me)</small>
-                </div>
-            </div>
-
-            <div class="window" id="about">
-                <div class="titlebar">
-                    <img class="titlebaricon" src="/assets/icons/about.png">
-                    <div class="titlebartitle">About Me!</div>
-                </div>
-                <div class="windowcontent">
-                    <b>Name</b>
-                    <br>
-                    You can call me Symple (or Ramona)!
-                    <br>
-                    <br>
-                    <b>Pronouns</b>
-                    <br>
-                    She/They/He (order of preference)
-                    <br><br>
-                    <b>Gender</b>
-                    <br>
-                    Woman
-                    <br><br>
-                    <b>Sexuality</b>
-                    <br>
-                    Pansexual
-                    <br><br>
-                    <b>Ethnicity</b>
-                    <br>
-                    Colombian and Puerto Rican (I don't know much Spanish sadly)
-                    <br><br>
-                    <b>Hobbies</b>
-                    <br>
-                    Gaming, drawing, coding, occasionally animating or making music
-                </div>
-            </div>
-
-            <div class="window" id="interests">
-                <div class="titlebar">
-                    <img class="titlebaricon" src="/assets/icons/interests.png">
-                    <div class="titlebartitle">Current Interests</div>
-                </div>
-                <div class="windowcontent">
-                   <b>Games</b>
-                    <br>
-                    Limbus Company, Lobotomy Corporation
-                    <br><br>
-                    <b>Music</b>
-                    <br>
-                    Cigarettes After Sex
-                    <br><br><br>
-                    <small id="lastupdated">Full interest list might come soon...</small>
-                </div>
-            </div>
-
-            <div class="window" id="favoritesong">
-                <div class="titlebar">
-                    <img class="titlebaricon" src="/assets/icons/music.png">
-                    <div class="titlebartitle">Favorite Song</div>
-                </div>
-                <div class="windowcontent">
-                    Sunsetz by Cigarettes After Sex (really just any song by them tbh)
-                    <br><br>
-                    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3513368987/size=small/bgcol=ffffff/linkcol=7137dc/track=3801195981/transparent=true/" seamless><a href="https://cigarettesaftersex.bandcamp.com/album/cigarettes-after-sex">Cigarettes After Sex by Cigarettes After Sex</a></iframe>                </div>
-            </div>
-       </div>
-       
-       <div id="overlay"></div>
+        </div>
     </body>
+
+    <audio loop id="favsong" src="/assets/favsong.mp3"></audio>
+    <script>
+        const song = document.getElementById("favsong");
+        const playButton = document.getElementById("songplaypause");
+        const progressFill = document.getElementById("songfill");
+        const songStart = document.getElementById("songstart");
+
+        function toggleMusic() {
+            if (song.paused) {
+                song.play();
+                playButton.style.backgroundImage = "url('/assets/pausebutton.png')";
+            } else {
+                song.pause();
+                playButton.style.backgroundImage = "url('/assets/playbutton.png')";
+            }
+        }
+
+        song.addEventListener("timeupdate", () => {
+            const percentage = (song.currentTime / song.duration) * 100;
+            const minutes = Math.floor(song.currentTime / 60);
+            const seconds = Math.floor(song.currentTime % 60);
+            const formattedSeconds = String(seconds).padStart(2, "0");
+
+            progressFill.style.width = percentage + "%";
+
+            songStart.textContent = minutes + ":" + formattedSeconds
+        });
+
+        function aboutTransition() {
+            const aboutButton = document.getElementById("info");
+            aboutButton.classList.add("flyOutTransition");
+            document.body.classList.add("fadeOutTransition");
+
+            setTimeout(() => {
+                window.location.href = "/about.html";
+            }, 700)
+        }
+        function profileTransition() {
+            const profileButton = document.getElementById("profiles");
+            profileButton.classList.add("flyOutTransition");
+            document.body.classList.add("fadeOutTransition");
+
+            setTimeout(() => {
+                window.location.href = "/profiles.html";
+            }, 700)
+        }
+    </script>
+
 </html>

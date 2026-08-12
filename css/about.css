@@ -1,0 +1,239 @@
+body{
+    background-image: url("/assets/BGSquareBig2x.png");
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.content{
+    transform-origin: top; 
+    scale: clamp(1, 80vmin / 222px, 3);
+
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aboutbox{
+    background-color: #FBFBFB;
+    width: 222px;
+    padding: 3px;
+
+    box-shadow:
+    0px 2px 0px -1px #FBFBFB,
+    0px -2px 0px -1px #FBFBFB,
+    2px 0px 0px -1px #FBFBFB,
+    -2px 0px 0px -1px #FBFBFB,
+    0px 3px 0px -1px #8A00D3,
+    0px -3px 0px -1px #8A00D3,
+    3px 0px 0px -1px #8A00D3,
+    -3px 0px 0px -1px #8A00D3,
+    1px 2px 0px -1px #8A00D3,
+    2px 1px 0px -1px #8A00D3,
+    1px -2px 0px -1px #8A00D3,
+    2px -1px 0px -1px #8A00D3,
+    -1px 2px 0px -1px #8A00D3,
+    -2px 1px 0px -1px #8A00D3,
+    -1px -2px 0px -1px #8A00D3,
+    -2px -1px 0px -1px #8A00D3,
+    0px 4px 0px -1px #FBFBFB,
+    0px -4px 0px -1px #FBFBFB,
+    4px 0px 0px -1px #FBFBFB,
+    -4px 0px 0px -1px #FBFBFB,
+    -1px 3px 0px -1px #FBFBFB,
+    -2px 2px 0px -1px #FBFBFB,
+    -3px 1px 0px -1px #FBFBFB,
+    -1px -3px 0px -1px #FBFBFB,
+    -2px -2px 0px -1px #FBFBFB,
+    -3px -1px 0px -1px #FBFBFB,
+    1px 3px 0px -1px #FBFBFB,
+    2px 2px 0px -1px #FBFBFB,
+    3px 1px 0px -1px #FBFBFB,
+    1px -3px 0px -1px #FBFBFB,
+    2px -2px 0px -1px #FBFBFB,
+    3px -1px 0px -1px #FBFBFB;
+}
+
+.titlebox{
+    background-color: #696969;
+    width: 225px;
+    height: 16px;
+
+    color: #D3CBC3;
+    font-family: "PSquare";
+    padding-left: 3px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow:
+    0px 2px 0px -1px #696969,
+    0px -2px 0px -1px #696969,
+    2px 0px 0px -1px #696969,
+    -2px 0px 0px -1px #696969,
+    0px 3px 0px -1px #FBFBFB,
+    0px -3px 0px -1px #FBFBFB,
+    3px 0px 0px -1px #FBFBFB,
+    -3px 0px 0px -1px #FBFBFB,
+    1px 2px 0px -1px #FBFBFB,
+    2px 1px 0px -1px #FBFBFB,
+    1px -2px 0px -1px #FBFBFB,
+    2px -1px 0px -1px #FBFBFB,
+    -1px 2px 0px -1px #FBFBFB,
+    -2px 1px 0px -1px #FBFBFB,
+    -1px -2px 0px -1px #FBFBFB,
+    -2px -1px 0px -1px #FBFBFB,
+    0px 4px 0px -1px #696969,
+    0px -4px 0px -1px #696969,
+    4px 0px 0px -1px #696969,
+    -4px 0px 0px -1px #696969,
+    -1px 3px 0px -1px #696969,
+    -2px 2px 0px -1px #696969,
+    -3px 1px 0px -1px #696969,
+    -1px -3px 0px -1px #696969,
+    -2px -2px 0px -1px #696969,
+    -3px -1px 0px -1px #696969,
+    1px 3px 0px -1px #696969,
+    2px 2px 0px -1px #696969,
+    3px 1px 0px -1px #696969,
+    1px -3px 0px -1px #696969,
+    2px -2px 0px -1px #696969,
+    3px -1px 0px -1px #696969;
+}
+
+.descbox{
+    background-color: #000000;
+    width: 225px;
+    height: 16px;
+
+    color: #E0F000;
+    padding-left: 3px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    box-shadow:
+    0px 2px 0px -1px #000000,
+    0px -2px 0px -1px #000000,
+    2px 0px 0px -1px #000000,
+    -2px 0px 0px -1px #000000,
+    0px 3px 0px -1px #FBFBFB,
+    0px -3px 0px -1px #FBFBFB,
+    3px 0px 0px -1px #FBFBFB,
+    -3px 0px 0px -1px #FBFBFB,
+    1px 2px 0px -1px #FBFBFB,
+    2px 1px 0px -1px #FBFBFB,
+    1px -2px 0px -1px #FBFBFB,
+    2px -1px 0px -1px #FBFBFB,
+    -1px 2px 0px -1px #FBFBFB,
+    -2px 1px 0px -1px #FBFBFB,
+    -1px -2px 0px -1px #FBFBFB,
+    -2px -1px 0px -1px #FBFBFB,
+    0px 4px 0px -1px #000000,
+    0px -4px 0px -1px #000000,
+    4px 0px 0px -1px #000000,
+    -4px 0px 0px -1px #000000,
+    -1px 3px 0px -1px #000000,
+    -2px 2px 0px -1px #000000,
+    -3px 1px 0px -1px #000000,
+    -1px -3px 0px -1px #000000,
+    -2px -2px 0px -1px #000000,
+    -3px -1px 0px -1px #000000,
+    1px 3px 0px -1px #000000,
+    2px 2px 0px -1px #000000,
+    3px 1px 0px -1px #000000,
+    1px -3px 0px -1px #000000,
+    2px -2px 0px -1px #000000,
+    3px -1px 0px -1px #000000;
+}
+
+.sectionlabel{
+    display: inline-block;
+    background-color: #EBBAFB;
+    height: 14px;
+    padding-left: 3px;
+    padding-top: 1px;
+    padding-right: 25px;
+
+    margin-left: -3px;
+    margin-top: -3px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+    color: #8A00D3;
+
+    box-shadow:
+    -1px 1px 0px 0px #EBBAFB,
+    1px -1px 0px 0px #EBBAFB,
+    -2px 2px 0px 0px #8A00D3,
+    2px -2px 0px 0px #8A00D3,
+    -2px 1px 0px 0px #8A00D3,
+    -1px 0px 0px 0px #8A00D3,
+    0px -1px 0px 0px #8A00D3,
+    1px -2px 0px 0px #8A00D3,
+    2px -1px 0px 0px #8A00D3,
+    1px 0px 0px 0px #8A00D3,
+    0px 1px 0px 0px #8A00D3,
+    -1px 2px 0px 0px #8A00D3,
+    3px 0px 0px 0px #FBFBFB,
+    3px -1px 0px 0px #FBFBFB,
+    2px 0px 0px 0px #FBFBFB,
+    1px 1px 0px 0px #FBFBFB,
+    0px 2px 0px 0px #FBFBFB,
+    0px 3px 0px 0px #FBFBFB,
+    -1px 3px 0px 0px #FBFBFB;
+}
+
+#exitbutton{
+    width: 34px;
+    height: 12px;
+    margin-left: auto;
+    margin-right: 3px;
+}
+
+@keyframes aboutPageOpenAnimation {
+    0% {
+        background-image: url("/assets/BGSquareBig2x.png");
+        opacity: 0;
+        transform: translateY(200vh);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        background-image: url("/assets/pictobg.png");
+        transform: translateY(0);
+    }
+}
+
+.aboutInAnimation {
+    animation: aboutPageOpenAnimation 0.7s linear forwards;
+}
+
+@keyframes aboutPageCloseAnimation {
+    0% {
+        background-image: url("/assets/pictobg.png");
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        background-image: url("/assets/BGSquareBig2x.png");
+        transform: translateY(200vh);
+    }
+}
+
+.aboutOutAnimation {
+    animation: aboutPageCloseAnimation 0.7s linear forwards;
+}

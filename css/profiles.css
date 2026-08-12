@@ -1,0 +1,198 @@
+body{
+    background-image: url("/assets/BGSquareBig2x.png");
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.content{
+    max-width: 1100px;
+    
+    transform-origin: top; 
+    scale: clamp(1, 80vmin / 222px, 3);
+    padding-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.titlebox{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+
+    background-color: #000000;
+    width: 222px;
+    padding: 3px;
+
+    color: #fff;
+
+    margin-bottom: 5px;
+
+    box-shadow:
+    0px 2px 0px -1px #000000,
+    0px -2px 0px -1px #000000,
+    2px 0px 0px -1px #000000,
+    -2px 0px 0px -1px #000000,
+    0px 3px 0px -1px #FB6900,
+    0px -3px 0px -1px #FB6900,
+    3px 0px 0px -1px #FB6900,
+    -3px 0px 0px -1px #FB6900,
+    1px 2px 0px -1px #FB6900,
+    2px 1px 0px -1px #FB6900,
+    1px -2px 0px -1px #FB6900,
+    2px -1px 0px -1px #FB6900,
+    -1px 2px 0px -1px #FB6900,
+    -2px 1px 0px -1px #FB6900,
+    -1px -2px 0px -1px #FB6900,
+    -2px -1px 0px -1px #FB6900,
+    0px 4px 0px -1px #000000,
+    0px -4px 0px -1px #000000,
+    4px 0px 0px -1px #000000,
+    -4px 0px 0px -1px #000000,
+    -1px 3px 0px -1px #000000,
+    -2px 2px 0px -1px #000000,
+    -3px 1px 0px -1px #000000,
+    -1px -3px 0px -1px #000000,
+    -2px -2px 0px -1px #000000,
+    -3px -1px 0px -1px #000000,
+    1px 3px 0px -1px #000000,
+    2px 2px 0px -1px #000000,
+    3px 1px 0px -1px #000000,
+    1px -3px 0px -1px #000000,
+    2px -2px 0px -1px #000000,
+    3px -1px 0px -1px #000000;
+}
+
+small {
+    color: #C4C4C4;
+}
+
+.profilebox {
+    width: 220px;
+    height: 22px;
+    padding: 3px;
+
+    background-image: url("/assets/profileboxbg.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+    box-shadow: 0px 1px 0px 0px rgb(0, 0, 0), 1px 0px 0px 0px rgb(73, 73, 73), -1px 0px 0px 0px rgb(73, 73, 73), 0px 0px 0px 1px rgb(121, 121, 121);
+
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.profilelogo {
+    margin-left: -3;
+    margin-top: -3;
+    height: 28px;
+    width: 28px;
+
+    background-image: url("/assets/pfp.jpg");
+    background-size: cover;
+
+    box-shadow: 1px 0px 0px 0px rgb(73, 73, 73);
+}
+
+.profileinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.profilewebsite {
+    margin-top: -2;
+    margin-left: 2;
+    font-size: 9px;
+    color: rgb(81, 81, 81);
+}
+
+.profilesubinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin-left: 4px;
+    margin-top: 0px;
+}
+.username {
+    color: rgb(81, 81, 81);
+    width: 95px;
+    height: 9px;
+    font-size: 8px;
+    background-color: #fbfbfb;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 0px 0px 0px 1px rgb(243, 243, 243), 0px 0px 0px 2px rgb(227, 227, 227), 0px 0px 0px 3px rgb(121, 121, 121);
+}
+
+.usercount {
+    color: rgb(81, 81, 81);
+    width: 47px;
+    height: 9px;
+    font-size: 8px;
+    background-color: #fbfbfb;
+    margin-left: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-shadow: 0px 0px 0px 1px rgb(243, 243, 243), 0px 0px 0px 2px rgb(227, 227, 227), 0px 0px 0px 3px rgb(121, 121, 121);
+}
+
+.connection {
+    background-image: url("/assets/networkicon.png");
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    margin-top: -3;
+}
+
+.userbutton {
+    height: 9px;
+    width: 15px;
+    font-size: 8px;
+    padding: 0;
+}
+
+.loading {
+    width: 12px;
+    height: 11px;
+    background-image: url("/assets/loading.gif");
+}
+
+#exitbutton{
+    width: 27px;
+    height: 11px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+#bluesky{
+    background-image: url("/assets/icons/bluesky.png");
+}
+#github{
+    background-image: url("/assets/icons/github.png");
+}
+#instagram{
+    background-image: url("/assets/icons/instagram.png");
+}
+#pronouns{
+    background-image: url("/assets/icons/pronouns.png");
+}
+#tiktok{
+    background-image: url("/assets/icons/tiktok.png");
+}
+#twitter{
+    background-image: url("/assets/icons/twitter.png");
+}
+#youtube{
+    background-image: url("/assets/icons/youtube.png");
+}
